@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_rooms"
+        android:icon="@drawable/rooms"
+        android:title="Rooms" />
+
+
+    <item
+        android:id="@+id/nav_car_booking"
+        android:icon="@drawable/car_booking"
+        android:title="Car Booking" />
+
+    <item
+        android:id="@+id/nav_car_washing"
+        android:icon="@drawable/car_washing"
+        android:title="Car Washing" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+
+</menu>

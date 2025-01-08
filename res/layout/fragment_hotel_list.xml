@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/frameLayout"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/hotelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="109dp"
+        android:text="Hotel List"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abidjan 200 hotels"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:padding="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_edittext" /> <!-- Set the border -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Amenities"
+            android:textColor="#0000FF"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Filter by"
+            android:textColor="#0000FF"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp" />
+
+         <TextView
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="Sort by"
+            android:textColor="#0000FF"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+
+      <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/hotelImage4"
+            android:src="@drawable/img_one"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical" />
+
+     <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="119dp"
+         android:layout_weight="1"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/hotelName4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sofitel"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/hotelRating4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Rating: 4.5"
+             android:textSize="14sp" />
+
+         <TextView
+             android:id="@+id/hotelDescription4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:ellipsize="end"
+             android:maxLines="2"
+             android:text="This understated hotel is 5 km from both..."
+             android:textSize="12sp" />
+
+         <LinearLayout
+             android:orientation="horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center">
+
+             <TextView
+                 android:id="@+id/hotelPrice4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="25% OFF $127"
+                 android:textStyle="bold"
+                 android:textSize="14sp" />
+
+             <TextView
+                 android:id="@+id/bookButton4"
+                 android:layout_width="126dp"
+                 android:layout_height="50dp"
+                 android:layout_marginTop="0dp"
+                 android:background="@drawable/button_gradient"
+
+                 android:gravity="center"
+                 android:text="Book Now"
+                 android:textColor="@android:color/white" />
+         </LinearLayout>
+
+     </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/hotelImage3"
+                    android:src="@drawable/img_two"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/hotelName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sofitel"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hotelRating3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating: 4.5"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hotelDescription3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This understated hotel is 5 km from both..."
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/hotelPrice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25% OFF $127"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/bookButton3"
+                            android:layout_width="126dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/button_gradient"
+
+                            android:gravity="center"
+                            android:text="Book Now"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/hotelImage2"
+                    android:src="@drawable/img_three"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/hotelName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sofitel"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hotelRating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating: 4.5"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hotelDescription2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This understated hotel is 5 km from both..."
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/hotelPrice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25% OFF $127"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/bookButton2"
+                            android:layout_width="126dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/button_gradient"
+
+                            android:gravity="center"
+                            android:text="Book Now"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/hotelImage1"
+            android:src="@drawable/img_four"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/hotelName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sofitel"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hotelRating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4.5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hotelDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This understated hotel is 5 km from both..."
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/hotelPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25% OFF $127"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bookButton1"
+                    android:layout_width="126dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/button_gradient"
+
+                    android:gravity="center"
+                    android:text="Book Now"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
